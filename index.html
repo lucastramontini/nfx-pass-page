@@ -43,7 +43,7 @@
   </style>
 </head>
 <body>
-  <img src="https://nfxapp.com.br/logo-nfx.png" alt="NFx" class="logo">
+  <img src="logo_nfx.png" alt="NFx" class="logo">
   <h1>Adicionar Cartão NFx</h1>
   <p>Toque no botão abaixo para adicionar seu cartão à Carteira (Apple Wallet).</p>
   <button id="addBtn">Adicionar à Carteira</button>
@@ -51,7 +51,7 @@
 
   <script>
     const token = new URLSearchParams(window.location.search).get("token") || "demo123";
-    const base = "https://nfx-pass-service.onrender.com"; // substitua se necessário
+    const base = "https://nfx-pass-service.onrender.com";
     const passURL = `${base}/r/${token}`;
     document.getElementById("addBtn").onclick = () => {
       window.location.href = passURL;
